@@ -1,3 +1,5 @@
+import getJoke from '../api/jokeData';
+
 function Home() {
   return (
     <div
@@ -9,7 +11,8 @@ function Home() {
         margin: '0 auto',
       }}
     >
-      <h1>Welcome Home!</h1>
+      <h1>Welcome!</h1>
+      <button type="button" onClick={getJoke}>Get a Joke</button>
     </div>
   );
 }
